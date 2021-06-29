@@ -10,6 +10,7 @@ ctx.lineWidth=2
 canvas.addEventListener("mousedown",my_mousedown);
 function my_mousedown(e){
 color=document.getElementById("color").value;
+  radius=document.getElementById("radius").value;
 mouseEvent="mouseDown";
 }
 canvas.addEventListener("mousemove",my_mousemove);
@@ -19,11 +20,8 @@ currenty=e.clientY-canvas.offsetTop;
 if(mouseEvent=="mouseDown"){
 ctx.beginPath();
 ctx.strokeStyle=color;
-ctx.lineWidth=340;
-ctx.moveTo(position_x,position_y);
-ctx.lineTo(currentx,currenty);
-ctx.stroke();
-
+ctx.lineWidth=200;
+  ctx.arc(current_position_of_mouse_x, current_position_of_mouse_y, radius ,0 , 2 * Math.PI); ctx.stroke();
 }
 position_x=currentx
 position_y=currenty
