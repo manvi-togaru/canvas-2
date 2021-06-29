@@ -21,7 +21,7 @@ if(mouseEvent=="mouseDown"){
 ctx.beginPath();
 ctx.strokeStyle=color;
 ctx.lineWidth=200;
-  ctx.arc(current_position_of_mouse_x, current_position_of_mouse_y, radius ,0 , 2 * Math.PI); ctx.stroke();
+  ctx.arc(currentx,currenty, radius ,0 , 2 * Math.PI); ctx.stroke();
 }
 position_x=currentx
 position_y=currenty
