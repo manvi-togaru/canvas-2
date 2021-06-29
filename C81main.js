@@ -6,11 +6,12 @@ color="blue";
 ctx.beginPath();
 ctx.strokeStyle=color;
 ctx.lineWidth=2
+radius=20;
 
 canvas.addEventListener("mousedown",my_mousedown);
 function my_mousedown(e){
 color=document.getElementById("color").value;
-  radius=document.getElementById("radius").value;
+  
 mouseEvent="mouseDown";
 }
 canvas.addEventListener("mousemove",my_mousemove);
