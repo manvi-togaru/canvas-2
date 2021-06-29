@@ -5,7 +5,7 @@ ctx=canvas.getContext("2d");
 color="blue";
 ctx.beginPath();
 ctx.strokeStyle=color;
-ctx.lineWidth=2
+ctx.lineWidth=200;
 radius=20;
 
 canvas.addEventListener("mousedown",my_mousedown);
